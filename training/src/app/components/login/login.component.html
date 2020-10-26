@@ -1,0 +1,7 @@
+<form [formGroup]="form">
+    <input type="text" id="loginTxt" name="login" formControlName="login">
+    <input type="password" id="passwordTxt" name="login" formControlName="password">
+    <button id="loginBtn" [disabled]="form.valid ? null : 'disabled'" class="btn btn-primary" (click)="login()">Hit Me!</button>
+</form>
+
+

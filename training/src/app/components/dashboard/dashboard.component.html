@@ -1,0 +1,18 @@
+
+  <main role="main">
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div *ngIf="isRequired">* validate</div>
+        
+        <div class="row">
+          <div class="col-md-4" *ngFor="let a of members">
+            <app-photo-box (pageChange)="callApi($event)" [member]="a"></app-photo-box>
+          </div>
+
+          <button (click)="callApi()"></button>
+        </div>
+      </div>
+    </div>
+  
+  </main>

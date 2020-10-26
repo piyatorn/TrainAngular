@@ -1,0 +1,13 @@
+<div class="card mb-4 shadow-sm" [routerLink]="['/member',member._id]">
+    <div>
+        <img class="card-img" [src]="member.imgUrl"/>
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{member.name | p2 | p3}}</p>
+    </div>
+
+
+    <button (click)="onPageChange(1)">1</button>
+    <button (click)="onPageChange(2)">2</button>
+
+  </div>
